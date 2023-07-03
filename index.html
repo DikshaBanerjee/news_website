@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="head">
+        <nav class="nav_bar flex container">
+            <a href="#">
+                <div class="logo">
+                    <div class="circle_logo">
+                        <div class="name_logo">D NEWS</div>
+                    </div>
+                </div>
+            </a>
+            <div class="nav_link">
+                <ul class="flex">
+                    <li class="hover_ele" id="all" onclick="onNavEleClick('all')">All</li>
+                    <li class="hover_ele" id="India" onclick="onNavEleClick('India')">National</li>
+                    <li class="hover_ele" id="international" onclick="onNavEleClick('international')">International</li>
+                    <li class="hover_ele" id="entertainment" onclick="onNavEleClick('entertainment')">Entertainment</li>
+                    <li class="hover_ele" id="sports" onclick="onNavEleClick('sports')">Sports</li>
+                    <li class="hover_ele" id="science" onclick="onNavEleClick('science')">Science</li>
+                </ul>
+            </div>
+            <div class="search_input flex">
+                <input type="text" class="input_area" id="input_area" placeholder="Search here">
+                <button class="search_btn" id="search_btn">SEARCH</button>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="card_container container flex" id="card_container">
+                      
+        </div>
+    </main>
+    <template id="card_temp">
+        <div class="card">
+            <div class="cd_header">
+                <img src="#" alt="image" id="news_img"/>
+            </div>
+            <div class="cd_content">
+                <h3 id="cd_title">This is the Title</h3>
+                <h6 class="cd_src" id="cd_src">End Gadget 22/06/23</h6>
+                <p class="desc" id="cd_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt non nisi obcaecati nihil repudiandae doloremque possimus animi vel natus hic.
+                </p>
+            </div>
+        </div>
+    </template>
+    <footer class="footer container flex">
+        <div class="home" id="home">
+            <a href="#" onclick="reload()">Home</a>
+        </div>  
+        <div class="about">
+            <a href="#">About</a>
+        </div>  
+        <div class="contact">
+            <a href="#">Contact</a>
+        </div>  
+    </footer>
+    <script src="script.js"> </script>
+</body>
+
+</html>
